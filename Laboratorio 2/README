@@ -125,6 +125,6 @@ So:
 uShiftIzq = ui_a << ui_b --> 1111 1111 1111 1111 1111 1111 1111 1111 even only one shift produces overflow, so this shift gives us a strange result (-4096)
 uShiftDch = ui_a >> (32 - ui_b); --> In this case it shifts 20 positions so it overflows again (we obtain 4095, that is an anomalous result) 
 
-When aplying the inclusive OR on the two shifts we also receive a bad result (-1)
+When applying the inclusive OR on the two shifts we also receive a bad result (-1)
 
 
