@@ -1,7 +1,7 @@
-#include <math.h>
-#include <limits.h>
-#include <stdio.h>
-#include <stdint.h> 
+#include <cmath>
+#include <climits>
+#include <cstdio>
+#include <cstdint> 
 
 
 
