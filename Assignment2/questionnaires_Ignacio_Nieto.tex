@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[paper=letter, fontsize=12pt]{article}
+\usepackage{pdflscape}
+\usepackage[spanish]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{blindtext}
+\usepackage{graphicx}     % Para insertar gráficas
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+%\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{titlesec} % Allows customization of titles
+
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+
+\fancyhead[C]{COMPARATIVE ANALYSIS OF IT QUESTIONNAIRES $\bullet$ November 2021} % Custom header text
+
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+%----------------------------------------------------------------------------------------
+%       TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\medskip
+\title{\vspace{15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Assignment $\#$2: Questionnaires}} % Article title
+\author{
+\large
+{\textsc{Ignacio Nieto Vidaurrázaga, 50757986-E}}\\[2mm]
+{\textsc{inietv00@estudiantes.unileon.es}}\\[2mm]
+\\[1mm]
+%\thanks{A thank you or further information}\\ % Your name
+%\normalsize \href{mailto:marco.torres.810@gmail.com}{marco.torres.810@gmail.com}\\[2mm] % Your email address
+\\[1mm]
+\normalsize Diseño y programación seguras\\[1mm] % Your institution
+\normalsize Máster Universitario en Ciberseguridad \\ % Your institution
+\normalsize Universidad de León (Spain) \\ % Your institution
+\vspace{2cm}
+}
+
+\end{titlepage}
+
+\date{}
+\usepackage[table, svgnames, dvipsnames]{xcolor}
+\usepackage{longtable}
+\usepackage[a4paper, landscape, margin=1cm,]{geometry}
+
+\usepackage{makecell, cellspace, caption}
+\setlength\cellspacetoplimit{3pt}
+\setlength\cellspacebottomlimit{3pt}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%----------------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Insert title
+\pagestyle{empty}
+\thispagestyle{fancy} % All pages have headers and footers
+
+\newpage
+
+\section{Purpose}
+ \begin{itemize}
+ \item The objective of this report is to make a brief analysis and comparison between some questionnaires used to secure information systems. I have chosen two questionnaires and the ASVS as a framework of reference. That three objects of study have interesting differences but it is not attempted to delve into any  
+\newlineof them nor assert which one is better. Each of them could be recommended depending on the needs of the organization. \newline 
+\newline
+ I've chosen the ASVS although it is not strictly a questionnaire, and that's because its items to be checked are a reference for almost all questionnaires nowadays, to the point that ASVS has become a de facto standard. 
+ 
+ \end{itemize}
+
+
+\begin{landscape}
+%\newgeometry{left=-1cm}
+%\vspace{2cm}
+\section{Comparison table}
+
+\begin{itemize}
+
+ \item In this section the three questionnaires are shown in a table format because it is the most visual way to perform the analysis and see the differences. The first two samplings are from the educational environment, Purdue University and University of California Irvine. And the last one, the Application Security Verification Standard by the OWASP Foundation, is more than a questionnaire as it is considered as a standard of secure application development.   
+ 
+ \end{itemize}
+\setlength\LTleft{-2.5cm}
+        \begin{longtable}{| c | L{7cm} | L{7cm} | L{7cm} |}
+            \hline 
+            \rowcolor{Gainsboro!60}
+            \makecell{} & \makecell{University of California Irvine}  & \makecell{Purdue University} & \makecell{ASVS by OWASP} \\
+            \hline
+            \endhead
+           ID & Security Risk Assessment Questionnaire - v1.5 (09/04/2018) \newline https://security.uci.edu/security-plan/plan-resources.html & Vendor Security Questionnaire v8.2 (no date of release found) \newline https://www.purdue.edu/securepurdue/\newline services/solution-services-review.php & OWASP Application Security Verification Standard \newline v4.0.3 (october 2021) \newline https://github.com/OWASP/ASVS \\
+           \hline
+            GOAL & Self-assessment tool designed to help Unit’s understand the security posture of the University systems.& Protect University Resources and Information assets when it is started a procedure of purchasing software. & The primary aim is to provide an open application security standard for web apps and web services of all types. Normalize the range in the coverage and level of rigor available in the market when it comes to performing Web application security verification using a commercially-workable open standard. \\
+          \hline
+           TARGET USERS & Generic individuals willing to  understand the security posture of their system and to identify ways to make their systems more secure. It is designed to protect University of Calfornia IT Resources whose unauthorized disclosure or modification could result in moderate to severe fines or modifications, losses or deletions that could result in moderate damage to that university & These kind of issues are mostly related to the PDF viewer, they will not appear in a print version of the document. & All software developers who need a list of requirements for secure development. \\
+           \hline
+           DESCRIPTION & 20 main sections with  \textbf{almost 150 security and verification questions}: \newline 1. Input Validation
+	2. Output Escaping/Encoding
+	3. Authentication and Password Management				
+	4. Session Management
+	5. Authorization and Access Control 
+	6. Cryptographic Practices
+	7. Error Handling, Auditing and Logging
+	8. Data Protection
+	9. Communication Security
+	10. System Configuration/Hardening
+	11. Database Security
+	12. File Management & The questionnaire is within a scheduled process that concludes with the approval or denial of the purchase of software. This process involves in the filling of the questionnaire by the vendor, technical stuff and employees of the University. All those actors must fill  \textbf{more than 220 questions} and cells divided in 4 four tabs: \newline 1) Project Information. 2) Data security. 3) Vendor Hosted. 4){ Purdue Hosted. \newline}  \newline With all the information the IT software is scored.  &  Its composed by  \textbf{286 points to be checked}. It covers all phases in development with their potential risks and is divided in 14 sections: \newline 1) Architecture, Design and Threat Modeling. 2) Authentication 3) Session Management 4) Access Control 5) Validation, Sanitization and Encoding 6) Stored Cryptography 7) Error Handling and Logging 8) Data Protection 9) Communication 10) Malicious Code 11) Business Logic	12) Files and Resources 13) API and Web Service 14) Configuration\\
+            \hline
+           PROS AND CONS & Well structured and very generic so it can be applied for most IT systems. The web page is clear and help potential users to follow the questionnaire.  \newline It has Only 6 versions since 2012, that gives us an idea of the lack of a strong community that contributes to develop this document. No GitHub or other official and verified repositories. Probably due to lack of employees designed to maintain this we can find unforgivable errors such as a users guide only for the version released in 2012.  & Once the questionnaire is submitted, Purdue University ensure that the purchase is rated and approved or denied within 30 days. Thats a quality characteristic since there are recommendations in the review report and not only a rating. There is another interesting Purdue's document, the Cloud Computing Consumer Guidelines, which provide guidance on operational and contractual requirements when is a Cloud service purchase. \newline There are no indications of different levels of security, so there is no distinction between small software and huge developments, all of then will have to fulfil the same requirements in the questionnaire.  & Strong community of contributors involved in the project and supported by an organization that is a reference in security. Furthermore is a non profit organization so it cant be focused to personal interests as other private companies or Universities. Also is a reference for every IT institution than tend to follow OWASP recommendations and adapt them in their processes and questionnaires. \newline The biggest disadvantage of ASVS is the level of detail and thoroughness that requires. This requires more and harder efforts from the companies that wanted to apply it. And over all it is needed qualified IT staff that can lead the entire process of security.\\
+           \hline
+           OTHERS & Some resources are offered by the UCI in order to attach correct format documents (data flow and network diagrams for example) to the questionnaire: \newline  https://wiki.oit.uci.edu/display/public/\newline SRAQ+Network+Diagram+and+Data+Flow\newline +Diagram+Examples & The questionnaire, the instructions, the version history and the reviewer scoring are unified in a single document. This can help to clarify the process of evaluating.  & In older versions there were 4 levels of security but the level 0 has been cancelled since this standard want to apply minimum levels of thoroughness in development. \newline ASVS requirement lists are made available in CSV, JSON, and other formats which may be useful for reference or programmatic use. \\
+            \hline
+        \end{longtable}
+     
+\end{landscape}
+
+
+
+
+
+\section{Conclusion}
+ \begin{itemize}
+ \item The three questionnaires are very useful when trying to adopt good practices in IT security. The two first are internal documents that help the universities in their purchases processes. The ASVS is more global and pretend to be a standard (in fact it is, because is referenced by almost all organizations developing web-based applications. UCI questionnaire refer it). \newline \newline 
+ 
+You must take into consideration the ASVS when developing or acquiring software but undoubtedly there are other questionnaires that are easier to fill and can be enough for some simple applications. If you want to implement the higher levels of security and thoroughness and consequently minimize risks you ought to implement OWASP ASVS.  
+ 
+ \end{itemize}
+
+\\ \\
+
+
+\end{document}
